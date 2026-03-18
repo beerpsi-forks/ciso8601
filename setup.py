@@ -1,7 +1,7 @@
 import os
 import sysconfig
 
-from setuptools import setup, Extension
+from setuptools import Extension, setup
 
 with open("README.rst", encoding="utf-8") as file:
     long_description = file.read()
@@ -30,8 +30,8 @@ if os.environ.get("STRICT_WARNINGS", "0") == "1":
     os.environ["_CL_"] += " /WX"
 
 VERSION = "2.3.3"
-CISO8601_CACHING_ENABLED = int(os.environ.get('CISO8601_CACHING_ENABLED', '1') == '1')
-Py_GIL_DISABLED = sysconfig.get_config_var("Py_GIL_DISABLED")
+CISO8601_CACHING_ENABLED = int(os.environ.get("CISO8601_CACHING_ENABLED", "1") == "1")
+Py_GIL_DISABLED = str(sysconfig.get_config_var("Py_GIL_DISABLED"))
 
 setup(
     name="ciso8601-ft",

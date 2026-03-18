@@ -38,7 +38,7 @@ setup(
     version=VERSION,
     description="Fast ISO8601 date time parser for Python written in C with support for free-threading",
     long_description=long_description,
-    url="https://github.com/beerpsi-forks/ciso8601/tree/feat/ft",
+    url="https://github.com/beerpsi-forks/ciso8601/tree/ciso8601-ft",
     license="MIT",
     python_requires=">=3.8",
     ext_modules=[

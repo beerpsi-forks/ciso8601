@@ -34,11 +34,11 @@ CISO8601_CACHING_ENABLED = int(os.environ.get('CISO8601_CACHING_ENABLED', '1') =
 Py_GIL_DISABLED = sysconfig.get_config_var("Py_GIL_DISABLED")
 
 setup(
-    name="ciso8601",
+    name="ciso8601-ft",
     version=VERSION,
-    description="Fast ISO8601 date time parser for Python written in C",
+    description="Fast ISO8601 date time parser for Python written in C with support for free-threading",
     long_description=long_description,
-    url="https://github.com/closeio/ciso8601",
+    url="https://github.com/beerpsi-forks/ciso8601/tree/feat/ft",
     license="MIT",
     python_requires=">=3.8",
     ext_modules=[

@@ -18,6 +18,7 @@ build = [
     "cp312-*",
     "cp313-*",
     "cp314-*",
+    "cp314t-*",
     "pp38-*",
     "pp39-*",
     "pp310-*",
@@ -35,4 +36,4 @@ skip = ["pp*"]
 
 [tool.cibuildwheel.windows]
 archs = ["AMD64"]
-skip = ["pp*-win*", "*-win32"]
+skip = ["pp*-win*", "*-win32", "cp313-*", "cp314-*"]

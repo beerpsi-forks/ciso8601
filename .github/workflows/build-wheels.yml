@@ -78,7 +78,6 @@ jobs:
 
   build_wheels:
     name: Build wheel on ${{ matrix.os }}
-    needs: [sanity_check]
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -102,7 +101,6 @@ jobs:
 
   build_sdist:
     name: Build source distribution
-    needs: [sanity_check]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5

@@ -92,7 +92,7 @@ jobs:
         with:
           platforms: all
 
-      - uses: pypa/cibuildwheel@v3.4.0
+      - uses: pypa/cibuildwheel@v4.3.4
 
       - uses: actions/upload-artifact@v4
         with:
